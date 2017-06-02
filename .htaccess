@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /t1/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^index$ public/index.php/$1
+    RewriteRule ^home$ public/home.php/$2
+    RewriteRule ^insert$ public/insert.php/$2
+    RewriteRule ^update$ public/update.php/$2
+    RewriteRule ^delete$ public/delete.php/$2
+    DirectoryIndex public/index.php
+</IfModule>

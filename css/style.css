@@ -1,0 +1,42 @@
+body {
+    background: #eee;
+}
+
+.wrapper {
+    display: block;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    float: none;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar .nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main>.form-group {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+}
