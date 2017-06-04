@@ -20,7 +20,7 @@
                 <?php //if(isset($alert)){ echo $alert; }
                 echo $alert; ?>
             </div>
-            <div class="card row">
+            <div class="card row" style="margin-top: 1.25rem!important;">
                 <div class="card-block">
                     <h4 class="card-title">Profile Form</h4>
                     <hr>

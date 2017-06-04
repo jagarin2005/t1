@@ -12,7 +12,7 @@
     $stmt2->execute();
     $stmt2->setFetchMode(PDO::FETCH_ASSOC);
     if( $res2 = $stmt2->fetchAll()){
-        echo '<table class="table table-hover">
+        echo '<table class="table table-reponsive table-hover">
                 <thead>
                     <tr>
                         <th>ID</th>

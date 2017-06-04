@@ -28,25 +28,29 @@
             $stmt2->bindParam(8, $slevel, PDO::PARAM_INT);
             
             if( $stmt2->execute() ){
-                $alert = '<div role="alert" class="alert alert-success alert-dismissible fade show mt-1" style="position: absolute;margin: 0 auto 0 auto;left: 25%;right: 25%"> 
-                            <button type="button" class="close" data-dismiss="alert" aria--label="close">
+                $alert = '<div role="alert" class="alert alert-success alert-dismissible fade show mt-3"> 
+                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <strong> <i class="fa fa-check-circle"></i> Success </strong> Insert data id ' . $sid . ' to database is complete </div>';
                 $stmt2 = null;
             }else{
-                $alert = '<div role="alert" class="alert alert-danger alert-dismissible fade show mt-1" style="position: absolute;margin: 0 auto 0 auto;left: 25%;right: 25%"><button type="button" class="close" data-dismiss="alert" aria--label="close">
+                $alert = '<div role="alert" class="alert alert-danger alert-dismissible fade show mt-3">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <strong> <i class="fa fa-exclamation-circle"></i> Error! </strong> Cannot insert these data to database Please check your data </div>';
+                echo '<script>console.log("This cannot execute your data please contact Webmaster")</script>';
             }
         }catch(PDOException $e){
-            $alert = '<div role="alert" class="alert alert-danger alert-dismissible fade show mt-1" style="position: absolute;margin: 0 auto 0 auto;left: 25%;right: 25%"><button type="button" class="close" data-dismiss="alert" aria--label="close">
+            $alert = '<div role="alert" class="alert alert-danger alert-dismissible fade show mt-3">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <strong> <i class="fa fa-exclamation-circle"></i> Error! </strong> Cannot insert these data to database Please check your data </div>';
         }catch(Exception $e){
-            $alert = '<div role="alert" class="alert alert-danger alert-dismissible fade show mt-1" style="position: absolute;margin: 0 auto 0 auto;left: 25%;right: 25%"><button type="button" class="close" data-dismiss="alert" aria--label="close">
+            $alert = '<div role="alert" class="alert alert-danger alert-dismissible fade show mt-3">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <strong> <i class="fa fa-exclamation-circle"></i> Error! </strong> Cannot insert these data to database Please check your data </div>';

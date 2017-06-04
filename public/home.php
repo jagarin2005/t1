@@ -14,7 +14,7 @@
                 <?php //require_once("../template/sidebar.php"); ?>
                 <main class="col-sm-12 pt-5" style="background-color: #fff;">
                     <h1 class="py-4"><i class="fa fa-search"></i> Search</h1>
-                    <form class="form-inline" action="" method="get">
+                    <form class="form-inline" action="javascript:void(0);">
                         <div class="form-group px-1">
                             <select class="form-control" name="selects" id="selects">
                                 <option value="id">ID</option>
