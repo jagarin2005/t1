@@ -20,9 +20,17 @@
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if($res = $stmt->fetch()){
-            header("location: home");
-            $_SESSION["user"] = $res["username"];
-            $_SESSION["name"] = $res["name"];
+            if($res["permission"] == 1){
+                header("location: home");
+                $_SESSION["user"] = $res["username"];
+                $_SESSION["name"] = $res["name"];
+                $_SESSION["role"] = $res["permission"];
+            }elseif($res["permission"] == 2){
+                header("location: bdd");
+                $_SESSION["user"] = $res["username"];
+                $_SESSION["name"] = $res["name"];
+                $_SESSION["role"] = $res["permission"];
+            }
         }else{
             $err = '<div class="form-group">
                         <div class="col-sm-12">

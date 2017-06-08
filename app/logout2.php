@@ -1,5 +1,5 @@
 <?php
-    if(!isset($_SESSION["user"]) && !isset($_SESSION["name"]) && $_SESSION["role"] != 1){
+    if(!isset($_SESSION["user"]) && !isset($_SESSION["name"]) && $_SESSION["role"] != 2){
         $_SESSION["login_err"] = '<div class="form-group">
                         <div class="col-sm-12">
                             <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Please login </div>

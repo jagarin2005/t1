@@ -1,0 +1,65 @@
+body {}
+
+.wrapper {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    float: none;
+    -webkit-box-shadow: 2px 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 2px 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 2px 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card .card-header {
+    /*color: rgba(255, 255, 255, 0.58);
+    background-color: #b71c1c;*/
+}
+
+.alert {
+    margin: 0 auto 0 auto;
+    left: 25%;
+    right: 25%;
+    -webkit-box-shadow: 0 8px 15px -2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 8px 15px -2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 15px -2px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar .nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+main>.form-group {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+}

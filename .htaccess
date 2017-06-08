@@ -8,5 +8,6 @@
     RewriteRule ^insert$ public/insert.php/$2
     RewriteRule ^edit$ public/edit.php/$2
     RewriteRule ^delete$ public/delete.php/$2
+    RewriteRule ^bdd$ public/tb.php/$2
     DirectoryIndex public/index.php
 </IfModule>
