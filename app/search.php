@@ -54,7 +54,8 @@
     $stmt2->execute();
     $stmt2->setFetchMode(PDO::FETCH_ASSOC);
     if( $res2 = $stmt2->fetchAll()){
-        echo '<table class="table table-reponsive table-hover">
+        echo '<div class="alert alert-success"> Search : '.$stmt2->rowCount().' result </div>
+        <table class="table table-reponsive table-hover">
                 <thead>
                     <tr>';  
                           /*if(isset($cpid)){ echo '<th>ID</th>'; }

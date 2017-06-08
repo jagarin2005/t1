@@ -33,9 +33,11 @@
                     <div class="col-sm-12 p-3" id="showsearch"></div>
                 </main>
             </div>
+            <?php require_once("../template/modal.edit.php"); ?>
+            <?php require_once('../app/update.php') ?>
+            <?php require_once('../app/delete.php') ?>
         </div>
     </body>
 </html>
-<?php require_once("../template/modal.edit.php"); ?>
 <script src="js/editFunction.js"></script>
 <?php $conn = null; ?>
